@@ -16,7 +16,7 @@ export default function MainSectionWrapper({
   }
 
   return (
-    <div className="flex w-[70%] mx-auto">
+    <div className="flex lg:w-[70%] md:w-[80%] mx-auto">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

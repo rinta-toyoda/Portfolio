@@ -1,12 +1,22 @@
 import Card from "./Card.tsx";
+import { ReactNode } from "react";
 
-export default function Cards({ items }: object[]) {
+export default function Cards({
+  items,
+}: {
+  items: {
+    name: string;
+    icon: ReactNode;
+    description: string;
+    skills: string[];
+  }[];
+}) {
   return (
     <div className="flex flex-wrap lg:flex-row md:flex-col justify-around gap-y-10">
       {items.map(
         (item: {
           name: string;
-          icon: string;
+          icon: ReactNode;
           description: string;
           skills: string[];
         }) => (

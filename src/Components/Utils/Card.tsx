@@ -18,7 +18,7 @@ export default function Card({
       className="bg-[#FFF8DB] rounded-2xl bg-opacity-85 p-4 basis-[45%]"
     >
       <h1 className="text-2xl text-[#7D8ABC] font-bold">{name}</h1>
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-2 justify-between">
         <p className="text-lg text-[#304463]">{description}</p>
         <div className="mr-3">{icon}</div>
       </div>

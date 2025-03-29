@@ -7,9 +7,20 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from "@mui/lab/TimelineOppositeContent";
-import Typography from "@mui/material/Typography";
+import Card from "./Card.tsx";
+import { ReactNode } from "react";
 
-export default function SectionTimeline({ items }: { items: object[] }) {
+export default function SectionTimeline({
+  items,
+}: {
+  items: {
+    date: string;
+    name: string;
+    description: string;
+    icon: ReactNode;
+    skills: string[];
+  }[];
+}) {
   return (
     <Timeline
       sx={{
@@ -19,7 +30,13 @@ export default function SectionTimeline({ items }: { items: object[] }) {
       }}
     >
       {items.map(
-        (item: { date: string; name: string; descriptions: string[] }) => (
+        (item: {
+          date: string;
+          name: string;
+          description: string;
+          icon: ReactNode;
+          skills: string[];
+        }) => (
           <TimelineItem>
             <TimelineOppositeContent color="#FFFFFF">
               {item.date}
@@ -29,14 +46,13 @@ export default function SectionTimeline({ items }: { items: object[] }) {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Typography variant="h4" component="span" color="#FFF8DB">
-                {item.name}
-              </Typography>
-              {item.descriptions.map((description) => (
-                <Typography color="#FFFFFF" fontSize="1.3rem">
-                  {description}
-                </Typography>
-              ))}
+              <Card
+                name="test"
+                description="description"
+                icon={item.icon}
+                skills={["a", "b", "c"]}
+              />
+              <div className="mb-6" />
             </TimelineContent>
           </TimelineItem>
         ),

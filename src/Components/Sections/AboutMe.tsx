@@ -4,7 +4,7 @@ import PlaceHolderImage from "../../assets/50x50.png";
 export default function AboutMe() {
   return (
     <MainSectionWrapper title="About Me">
-      <div className="flex flex-wrap">
+      <div className="flex">
         <div className="flex flex-col basis-[50%] text-3xl text-[#FFF8DB] ml-10 mr-10">
           <div className="mb-10">
             <p>
@@ -49,7 +49,7 @@ export default function AboutMe() {
           </div>
         </div>
         <img
-          className="h-[30rem] w-[20rem] mr-[2rem] mt-[8rem] ml-10 mb-3 rounded-2xl"
+          className="lg:h-[30rem] lg:w-[20rem] md:h-[24rem] md:w-[16rem] sm:h-[18rem] sm:w-[12rem] mr-[2rem] mt-[8rem] ml-10 mb-3 rounded-2xl"
           src={PlaceHolderImage}
         />
       </div>

@@ -1,11 +1,11 @@
 import SubSectionWrapper from "../SectionsWrappers/SubSectionWrapper.tsx";
 import SectionTimeline from "../Utils/SectionTimeline.tsx";
-import Items from "../../assets/ItemsTest.json";
+import { EducationDatas } from "../Datas/EducationDatas.tsx";
 
 export default function MyEducation() {
   return (
     <SubSectionWrapper title="My Education">
-      <SectionTimeline items={Items["items"]} />
+      <SectionTimeline items={EducationDatas} />
     </SubSectionWrapper>
   );
 }
