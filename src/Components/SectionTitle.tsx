@@ -13,9 +13,13 @@ export default function SectionTitle({
     <div className="w-full text-center mb-10">
       <motion.button
         whileHover={{ scale: 1.1 }}
-        transition={{ type: "spring", stiffness: 500 }}
+        whileTap={{ rotate: 3 }}
+        transition={{ type: "spring", stiffness: 500, duration: 0.1 }}
+        animate={{ backgroundColor: isShowing ? "transparent" : "#FFF8DB" }}
         onClick={onClickHandler}
-        className="text-white font-bold text-[6rem]"
+        className={`
+          text-[#7D8ABC] font-bold text-[6rem] ${!isShowing && "w-[50rem] rounded-2xl"}
+        `}
       >
         {title}
       </motion.button>

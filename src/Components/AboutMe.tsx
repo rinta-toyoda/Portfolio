@@ -4,8 +4,12 @@ import PlaceHolderImage from "../assets/50x50.png";
 export default function AboutMe() {
   return (
     <SectionWrapper title="About Me">
-      <div className="flex flex-row mt-20">
-        <div className="text-3xl text-white ml-20 mr-20 mt-[3rem]">
+      <div className="">
+        <img
+          className="float-right h-[20rem] w-auto mr-10 ml-10 mb-3"
+          src={PlaceHolderImage}
+        />
+        <div className="text-3xl text-[#FFF8DB] ml-10 mr-10">
           <p>Hi! My name is Rinta. Here is a quick introduction about me:</p>
           <ul>
             <li>Full-stack Engineer with nearly 2 years of experience. </li>
@@ -25,7 +29,6 @@ export default function AboutMe() {
             React.
           </p>
         </div>
-        <img className="h-[43rem] w-[25rem] mr-20" src={PlaceHolderImage} />
       </div>
     </SectionWrapper>
   );
