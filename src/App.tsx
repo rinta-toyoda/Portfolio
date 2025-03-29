@@ -17,9 +17,9 @@ export default function App() {
       <Background />
       <MainNavigation />
       <Title />
+      <AboutMe />
+      <MyProjects />
       <div className="flex flex-wrap justify-around items-start content-center">
-        <AboutMe />
-        <MyProjects />
         <MyExperience />
         <MyEducation />
       </div>

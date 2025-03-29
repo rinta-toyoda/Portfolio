@@ -1,30 +1,30 @@
 import { ReactNode, useState } from "react";
-import SectionTitle from "../Utils/SectionTitle.tsx";
 import { motion, AnimatePresence } from "motion/react";
+import MainSectionTitle from "./MainSectionTitle.tsx";
 
-export default function SubSectionWrapper({
+export default function MainSectionWrapper({
   title,
   children,
 }: {
   title: string;
   children: ReactNode;
 }) {
-  const [isShowing, setIsShowing] = useState(false);
+  const [isShowing, setIsShowing] = useState(true);
 
   function onClickTitle() {
     setIsShowing((prev) => !prev);
   }
 
   return (
-    <div className="flex-1 basis-[45%]">
+    <div className="flex w-[70%] mx-auto">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.3 }}
-        className={`mt-[10rem] px-[0rem] ${isShowing && "bg-gray-300 rounded-2xl bg-opacity-20"} pt-2 pb-10 mx-8`}
+        className={`mt-[10rem] px-[0rem] ${isShowing && "bg-gray-300 rounded-2xl bg-opacity-20"} pt-2 pb-10 mx-auto`}
       >
-        <SectionTitle
+        <MainSectionTitle
           onClickHandler={onClickTitle}
           isShowing={isShowing}
           title={title}

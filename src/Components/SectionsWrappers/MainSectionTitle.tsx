@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-export default function SectionTitle({
+export default function MainSectionTitle({
   title,
   onClickHandler,
   isShowing,
@@ -19,11 +19,11 @@ export default function SectionTitle({
         whileTap={{ rotate: 3 }}
         transition={{ type: "spring", stiffness: 500, duration: 0.1 }}
         animate={{
-          backgroundColor: isShowing ? "transparent" : "rgba(255,248,219,0.8)",
+          backgroundColor: isShowing ? "transparent" : "#FFB74D",
         }}
         onClick={onClickHandler}
         className={`
-           font-bold text-[6rem] ${isShowing ? "text-[#A6CDC6]" : "text-[#7D8ABC] w-[43rem] rounded-2xl"}
+           font-bold text-[6rem] ${isShowing ? "text-[#26A69A]" : "text-[#FF6F61] w-[43rem] rounded-2xl"}
         `}
       >
         {title}

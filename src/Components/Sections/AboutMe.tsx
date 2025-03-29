@@ -1,35 +1,58 @@
-import SubSectionWrapper from "../SectionsWrappers/SubSectionWrapper.tsx";
+import MainSectionWrapper from "../SectionsWrappers/MainSectionWrapper.tsx";
 import PlaceHolderImage from "../../assets/50x50.png";
 
 export default function AboutMe() {
   return (
-    <SubSectionWrapper title="About Me">
-      <div className="">
+    <MainSectionWrapper title="About Me">
+      <div className="flex flex-wrap">
+        <div className="flex flex-col basis-[50%] text-3xl text-[#FFF8DB] ml-10 mr-10">
+          <div className="mb-10">
+            <p>
+              <u>About Me</u>
+            </p>
+            <p>
+              Hi! My name is Rinta. I am a Master of Computer Scince Student in
+              University of Sydney and also a full-stack engineer with nearly 2
+              years of experience.
+            </p>
+          </div>
+
+          <div className="mb-10">
+            <p>
+              <u>My work experience</u>
+            </p>
+            <p>
+              I have worked at companies like bluh bluh bluh and bluh bluh bluh.
+              I have gained expeiences such as something
+            </p>
+          </div>
+
+          <div className="mb-10">
+            <p>
+              <u>My education</u>
+            </p>
+            <p>
+              I have worked at companies like bluh bluh bluh and bluh bluh bluh.
+              I have gained expeiences such as something
+            </p>
+          </div>
+
+          <div className="mb-10">
+            <p>
+              <u>My skills</u>
+            </p>
+            <p>
+              I am proficient in languages and frameworks such as Python
+              (FastAPI), PHP (Laravel), Kotlin (Spring Boot) and TypeScript with
+              React.
+            </p>
+          </div>
+        </div>
         <img
-          className="float-right h-[20rem] w-auto mr-10 ml-10 mb-3"
+          className="h-[30rem] w-[20rem] mr-[2rem] mt-[8rem] ml-10 mb-3 rounded-2xl"
           src={PlaceHolderImage}
         />
-        <div className="text-3xl text-[#FFF8DB] ml-10 mr-10">
-          <p>Hi! My name is Rinta. Here is a quick introduction about me:</p>
-          <ul>
-            <li>Full-stack Engineer with nearly 2 years of experience. </li>
-            <li>Master of Computer Science Student in University of Sydney.</li>
-            <li>
-              Founder of Japanese Student Association in University of Sydney.
-            </li>
-            <li>
-              Researched and analyzed brain signals in the bachelor's of
-              engineering in Waseda University, Japan.
-            </li>
-            <li>Studies Chinese</li>
-          </ul>
-          <p>
-            I am proficient in languages and frameworks such as Python
-            (FastAPI), PHP (Laravel), Kotlin (Spring Boot) and TypeScript with
-            React.
-          </p>
-        </div>
       </div>
-    </SubSectionWrapper>
+    </MainSectionWrapper>
   );
 }

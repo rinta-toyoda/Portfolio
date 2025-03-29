@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react";
-import SectionTitle from "../Utils/SectionTitle.tsx";
+import SubSectionTitle from "./SubSectionTitle.tsx";
 import { motion, AnimatePresence } from "motion/react";
 
 export default function SubSectionWrapper({
@@ -24,7 +24,7 @@ export default function SubSectionWrapper({
         transition={{ duration: 0.3 }}
         className={`mt-[10rem] px-[0rem] ${isShowing && "bg-gray-300 rounded-2xl bg-opacity-20"} pt-2 pb-10 mx-8`}
       >
-        <SectionTitle
+        <SubSectionTitle
           onClickHandler={onClickTitle}
           isShowing={isShowing}
           title={title}
