@@ -1,13 +1,14 @@
 import MainSectionWrapper from "../SectionsWrappers/MainSectionWrapper.tsx";
 import PlaceHolderImage from "../../assets/50x50.png";
+import Bubbles from "../Utils/Bubbles.tsx";
 
 export default function AboutMe() {
   return (
     <MainSectionWrapper title="About Me">
-      <div className="flex">
-        <div className="flex flex-col basis-[50%] text-3xl text-[#FFF8DB] ml-10 mr-10">
-          <div className="mb-10">
-            <p>
+      <div className="flex lg:justify-between justify-center items-center lg:items-start flex-col-reverse lg:flex-row">
+        <div className="flex flex-col basis-[50%] mx-10">
+          <div className="mb-10 text-3xl text-[#FFF8DB]">
+            <p className="mb-5">
               <u>About Me</u>
             </p>
             <p>
@@ -17,8 +18,8 @@ export default function AboutMe() {
             </p>
           </div>
 
-          <div className="mb-10">
-            <p>
+          <div className="mb-10 text-3xl text-[#FFF8DB]">
+            <p className="mb-5">
               <u>My work experience</u>
             </p>
             <p>
@@ -27,8 +28,8 @@ export default function AboutMe() {
             </p>
           </div>
 
-          <div className="mb-10">
-            <p>
+          <div className="mb-10 text-3xl text-[#FFF8DB]">
+            <p className="mb-5">
               <u>My education</u>
             </p>
             <p>
@@ -38,18 +39,31 @@ export default function AboutMe() {
           </div>
 
           <div className="mb-10">
-            <p>
+            <p className="text-3xl text-[#FFF8DB] mb-5">
               <u>My skills</u>
             </p>
-            <p>
-              I am proficient in languages and frameworks such as Python
-              (FastAPI), PHP (Laravel), Kotlin (Spring Boot) and TypeScript with
-              React.
-            </p>
+            <Bubbles
+              items={[
+                "PHP",
+                "Laravel",
+                "Python",
+                "FastAPI",
+                "Java",
+                "Kotlin",
+                "SpringBoot",
+                "HTML",
+                "CSS",
+                "Tailwind",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "AWS",
+              ]}
+            />
           </div>
         </div>
         <img
-          className="lg:h-[30rem] lg:w-[20rem] md:h-[24rem] md:w-[16rem] sm:h-[18rem] sm:w-[12rem] mr-[2rem] mt-[8rem] ml-10 mb-3 rounded-2xl"
+          className="h-[30rem] w-[20rem] lg:mr-[4rem] xl:mr-[9rem] lg:ml-10 mb-10 rounded-2xl"
           src={PlaceHolderImage}
         />
       </div>

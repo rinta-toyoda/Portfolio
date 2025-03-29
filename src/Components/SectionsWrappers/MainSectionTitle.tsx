@@ -14,7 +14,7 @@ export default function MainSectionTitle({
       <motion.button
         whileHover={{
           scale: 1.1,
-          backgroundColor: isShowing ? "transparent" : "rgba(255,248,219,1)",
+          backgroundColor: isShowing ? "transparent" : "#FFF8DB",
         }}
         whileTap={{ rotate: 3 }}
         transition={{ type: "spring", stiffness: 500, duration: 0.1 }}
@@ -23,7 +23,7 @@ export default function MainSectionTitle({
         }}
         onClick={onClickHandler}
         className={`
-           font-bold text-[6rem] ${isShowing ? "text-[#26A69A]" : "text-[#FF6F61] w-[43rem] rounded-2xl"}
+           font-bold text-[6rem] ${isShowing ? "text-[#26A69A]" : "text-[#FF6F61] button-width rounded-2xl"}
         `}
       >
         {title}

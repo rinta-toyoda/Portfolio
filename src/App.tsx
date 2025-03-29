@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import Title from "./Components/Utils/Title.tsx";
+import Title from "./Components/Sections/Title.tsx";
 import AboutMe from "./Components/Sections/AboutMe.tsx";
 import MyExperience from "./Components/Sections/MyExperience.tsx";
 import MyEducation from "./Components/Sections/MyEducation.tsx";
 import MyProjects from "./Components/Sections/MyProjects.tsx";
 import Background from "./Components/Background.tsx";
 import MainNavigation from "./Components/Sections/MainNavigation.tsx";
+import Links from "./Components/Sections/Links.tsx";
 
 export default function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function App() {
         <MyExperience />
         <MyEducation />
       </div>
+      <Links />
       <div className="mb-[40rem]"></div>
     </div>
   );

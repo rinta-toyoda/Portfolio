@@ -47,10 +47,10 @@ export default function SectionTimeline({
             </TimelineSeparator>
             <TimelineContent>
               <Card
-                name="test"
-                description="description"
+                name={item.name}
+                description={item.description}
                 icon={item.icon}
-                skills={["a", "b", "c"]}
+                skills={item.skills}
               />
               <div className="mb-6" />
             </TimelineContent>

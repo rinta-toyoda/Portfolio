@@ -2,7 +2,7 @@ import { LuNotebookPen } from "react-icons/lu";
 
 const ICON_SIZE = 90;
 
-export const ProjectData = [
+export const ProjectDatas = [
   {
     id: 1,
     name: "Project 1",
