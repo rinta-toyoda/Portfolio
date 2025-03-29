@@ -15,7 +15,7 @@ export default function Card({
 }) {
   return (
     <motion.div
-      whileHover={{ scale: 1.2 }}
+      whileHover={{ scale: 1.2, backgroundColor: "#FFF8DB" }}
       className="bg-[#FFF8DB] rounded-2xl bg-opacity-85 p-4 sm:basis-[45%] basis-[90%] xl:w-[100%] sm:w-[70%] w-[80%] mx-auto"
       key={name}
     >
