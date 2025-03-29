@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { IconType } from "react-icons";
+import { ReactNode } from "react";
 
 export default function Card({
   name,
@@ -9,7 +9,7 @@ export default function Card({
 }: {
   name: string;
   description: string;
-  icon: IconType;
+  icon: ReactNode;
   skills: string[];
 }) {
   return (
