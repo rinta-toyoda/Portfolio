@@ -25,15 +25,17 @@ export default function SectionTimeline({ items }) {
             {item.date}
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot />
+            <TimelineDot color="grey" />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography variant="h5" component="span" color="#FFFFFF">
+            <Typography variant="h4" component="span" color="#FFF8DB">
               {item.name}
             </Typography>
             {item.descriptions.map((description) => (
-              <Typography color="#FFFFFF">{description}</Typography>
+              <Typography color="#FFFFFF" fontSize="1.3rem">
+                {description}
+              </Typography>
             ))}
           </TimelineContent>
         </TimelineItem>

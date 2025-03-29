@@ -22,7 +22,7 @@ export default function SectionWrapper({
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.3 }}
-        className={`mt-[10rem] px-[0rem] ${isShowing && "bg-gray-300 rounded-2xl bg-opacity-10"} pt-2 pb-10 mx-8`}
+        className={`mt-[10rem] px-[0rem] ${isShowing && "bg-gray-300 rounded-2xl bg-opacity-20"} pt-2 pb-10 mx-8`}
       >
         <SectionTitle
           onClickHandler={onClickTitle}

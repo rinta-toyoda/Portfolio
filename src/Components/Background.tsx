@@ -70,7 +70,7 @@ export default function Background() {
             default: OutMode.out,
           },
           random: false,
-          speed: 3,
+          speed: 1,
           straight: false,
         },
         number: {
