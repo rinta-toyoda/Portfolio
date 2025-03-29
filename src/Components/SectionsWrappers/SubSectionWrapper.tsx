@@ -1,8 +1,8 @@
 import { ReactNode, useState } from "react";
-import SectionTitle from "./SectionTitle.tsx";
+import SectionTitle from "../Utils/SectionTitle.tsx";
 import { motion, AnimatePresence } from "motion/react";
 
-export default function SectionWrapper({
+export default function SubSectionWrapper({
   title,
   children,
 }: {

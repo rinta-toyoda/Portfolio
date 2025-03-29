@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import Title from "./Components/Title.tsx";
-import AboutMe from "./Components/AboutMe.tsx";
-import MyExperience from "./Components/MyExperience.tsx";
-import MyEducation from "./Components/MyEducation.tsx";
-import MyProjects from "./Components/MyProjects.tsx";
+import Title from "./Components/Utils/Title.tsx";
+import AboutMe from "./Components/Sections/AboutMe.tsx";
+import MyExperience from "./Components/Sections/MyExperience.tsx";
+import MyEducation from "./Components/Sections/MyEducation.tsx";
+import MyProjects from "./Components/Sections/MyProjects.tsx";
 import Background from "./Components/Background.tsx";
-import MainNavigation from "./Components/MainNavigation.tsx";
+import MainNavigation from "./Components/Sections/MainNavigation.tsx";
 
 export default function App() {
   useEffect(() => {

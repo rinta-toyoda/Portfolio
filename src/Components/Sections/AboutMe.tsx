@@ -1,9 +1,9 @@
-import SectionWrapper from "./SectionWrapper.tsx";
-import PlaceHolderImage from "../assets/50x50.png";
+import SubSectionWrapper from "../SectionsWrappers/SubSectionWrapper.tsx";
+import PlaceHolderImage from "../../assets/50x50.png";
 
 export default function AboutMe() {
   return (
-    <SectionWrapper title="About Me">
+    <SubSectionWrapper title="About Me">
       <div className="">
         <img
           className="float-right h-[20rem] w-auto mr-10 ml-10 mb-3"
@@ -30,6 +30,6 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-    </SectionWrapper>
+    </SubSectionWrapper>
   );
 }
