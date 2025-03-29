@@ -16,7 +16,7 @@ export default function SectionWrapper({
   }
 
   return (
-    <div className="flex-1 basis-[40%]">
+    <div className="flex-1 basis-[45%]">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

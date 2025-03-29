@@ -23,7 +23,7 @@ export default function SectionTitle({
         }}
         onClick={onClickHandler}
         className={`
-           font-bold text-[6rem] ${isShowing ? "text-[#A6CDC6]" : "text-[#7D8ABC] w-[50rem] rounded-2xl"}
+           font-bold text-[6rem] ${isShowing ? "text-[#A6CDC6]" : "text-[#7D8ABC] w-[43rem] rounded-2xl"}
         `}
       >
         {title}
