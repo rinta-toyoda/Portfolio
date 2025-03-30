@@ -5,7 +5,7 @@ import { WorkDatas } from "../Datas/WorkDatas.tsx";
 export default function WorkExperience() {
   return (
     <SubSectionWrapper title="Work">
-      <SectionTimeline items={WorkDatas} />
+      <SectionTimeline items={WorkDatas} skills_title="Used Skills" />
     </SubSectionWrapper>
   );
 }

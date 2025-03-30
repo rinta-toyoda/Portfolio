@@ -9,6 +9,7 @@ export default function Cards({
     icon: ReactNode;
     description: string;
     skills: string[];
+    link?: string;
   }[];
 }) {
   return (
@@ -19,12 +20,15 @@ export default function Cards({
           icon: ReactNode;
           description: string;
           skills: string[];
+          link?: string;
         }) => (
           <Card
             name={item.name}
             icon={item.icon}
             description={item.description}
             skills={item.skills}
+            skills_title="Used Skills"
+            link={item.link}
           />
         ),
       )}

@@ -5,7 +5,7 @@ import { EducationDatas } from "../Datas/EducationDatas.tsx";
 export default function MyEducation() {
   return (
     <SubSectionWrapper title="Education">
-      <SectionTimeline items={EducationDatas} />
+      <SectionTimeline items={EducationDatas} skills_title="Accomplished" />
     </SubSectionWrapper>
   );
 }

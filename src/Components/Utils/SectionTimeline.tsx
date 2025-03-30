@@ -12,6 +12,7 @@ import { ReactNode } from "react";
 
 export default function SectionTimeline({
   items,
+  skills_title,
 }: {
   items: {
     date: string;
@@ -20,6 +21,7 @@ export default function SectionTimeline({
     icon: ReactNode;
     skills: string[];
   }[];
+  skills_title: string;
 }) {
   return (
     <Timeline
@@ -52,6 +54,7 @@ export default function SectionTimeline({
                   description={item.description}
                   icon={item.icon}
                   skills={item.skills}
+                  skills_title={skills_title}
                 />
               </div>
             </TimelineContent>

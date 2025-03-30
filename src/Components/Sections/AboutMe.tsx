@@ -1,90 +1,71 @@
 import MainSectionWrapper from "../SectionsWrappers/MainSectionWrapper.tsx";
-import PlaceHolderImage from "../../assets/50x50.png";
+import MyPhoto from "../../assets/MyPhoto.jpg";
 import Bubbles from "../Utils/Bubbles.tsx";
+import { motion } from "motion/react";
+import Content from "../Utils/Content.tsx";
 
 export default function AboutMe() {
   return (
     <MainSectionWrapper title="About Me">
       <div className="flex lg:justify-between justify-center items-center lg:items-start flex-col-reverse lg:flex-row">
         <div className="flex flex-col basis-[50%] mx-10">
-          <div className="mb-10 text-3xl text-[#FFF8DB]">
-            <p className="mb-5">
-              <u>About Me</u>
+          <Content title="About Me">
+            <p className="content-text">
+              Full-stack Engineer from Japan with around 2 years of experience.
+              Able to speak Japanese, English and a little Chinese.
             </p>
-            <p>
-              Hi! My name is Rinta. I am a Master of Computer Scince Student in
-              University of Sydney and also a full-stack engineer with nearly 2
-              years of experience.
-            </p>
-          </div>
+          </Content>
 
-          <div className="mb-10 text-3xl text-[#FFF8DB]">
-            <p className="mb-5">
-              <u>My work experience</u>
+          <Content title="My work experience">
+            <p className="content-text">
+              I have worked as both a back-end and full-stack engineer. Through
+              the experience, I have acquired not only the web application
+              development skills but also the skills to work as a team and
+              defining software requirements by discussing with tech-leads,
+              managers and CEOs.
             </p>
-            <p>
-              I have worked at companies like bluh bluh bluh and bluh bluh bluh.
-              I have gained expeiences such as something
-            </p>
-          </div>
+          </Content>
 
-          <div className="mb-10 text-3xl text-[#FFF8DB]">
-            <p className="mb-5">
-              <u>My education</u>
+          <Content title="My education">
+            <p className="content-text">
+              In my undergraduate course, I have mainly studied and researched
+              about machine learning and neuroscience. Through the research, my
+              interest tilted towards artificial intelligence and IT, and
+              enrolled in Master of Computer Science at University of Sydney to
+              further deepen my knowledge.
             </p>
-            <p>
-              I have worked at companies like bluh bluh bluh and bluh bluh bluh.
-              I have gained expeiences such as something
-            </p>
-          </div>
+          </Content>
 
-          <div className="mb-10">
-            <p className="text-3xl text-[#FFF8DB] mb-5">
-              <u>My skills</u>
-            </p>
+          <Content title="My IT skills">
             <Bubbles
               items={[
                 "PHP",
                 "Laravel",
                 "Python",
                 "FastAPI",
-                "Java",
                 "Kotlin",
-                "Terraform",
-                "SpringBoot",
-                "SQL",
+                "Spring Boot",
                 "PostgreSQL",
-                "C++",
-                "HTML",
-                "CSS",
                 "Tailwind",
                 "JavaScript",
                 "TypeScript",
                 "React",
-                "Github",
+                "Vite",
+                "Docker",
                 "AWS",
-                "Mathematics",
-                "Physics",
-                "Biology",
-                "Japanese",
-                "English",
-                "Chinese",
-                "Machine Learning",
-                "Neuroscience",
-                "Signal Processing",
-                "Circuit Theory",
-                "Database Management",
-                "Networks",
-                "Software Engineering",
-                "Project Management",
               ]}
             />
-          </div>
+          </Content>
+
+          <Content title="Languages">
+            <Bubbles items={["Japanese", "English", "Chinese"]} />
+          </Content>
         </div>
-        <img
-          className="h-[30rem] w-[20rem] lg:mr-[4rem] xl:mr-[9rem] lg:ml-10 mb-10 rounded-2xl"
-          src={PlaceHolderImage}
-        />
+        <motion.img
+          whileHover={{ scale: 1.1 }}
+          className="lg:w-[40%] w-[25rem] lg:mt-[15rem] lg:mr-[3%] lg:ml-10 mb-10 rounded-2xl"
+          src={MyPhoto}
+        ></motion.img>
       </div>
     </MainSectionWrapper>
   );

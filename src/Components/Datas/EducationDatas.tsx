@@ -48,7 +48,7 @@ export const EducationDatas = [
       "Java",
       "Database Management",
       "SQL",
-      "PostgresSQL",
+      "PostgreSQL",
       "Networks",
       "Project Management",
       "Artifical Intelligence",
