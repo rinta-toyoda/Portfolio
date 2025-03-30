@@ -22,7 +22,7 @@ export default function Card({
       <h1 className="text-2xl text-[#7D8ABC] font-bold">{name}</h1>
       <div className="flex flex-row gap-2 justify-between">
         <p className="text-lg text-[#304463]">{description}</p>
-        <div className="mr-3">{icon}</div>
+        <div className="mr-3 mt-3">{icon}</div>
       </div>
       <p className="text-xl font-bold text-[#7D8ABC]">Used Skills</p>
       <Bubbles items={skills} />
