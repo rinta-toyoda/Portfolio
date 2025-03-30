@@ -46,13 +46,14 @@ export default function SectionTimeline({
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Card
-                name={item.name}
-                description={item.description}
-                icon={item.icon}
-                skills={item.skills}
-              />
-              <div className="mb-6" />
+              <div className="mb-[3.5rem] ml-[2rem]">
+                <Card
+                  name={item.name}
+                  description={item.description}
+                  icon={item.icon}
+                  skills={item.skills}
+                />
+              </div>
             </TimelineContent>
           </TimelineItem>
         ),
