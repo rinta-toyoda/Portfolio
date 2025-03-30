@@ -7,7 +7,7 @@ import Content from "../Utils/Content.tsx";
 export default function AboutMe() {
   return (
     <MainSectionWrapper title="About Me">
-      <div className="flex lg:justify-between justify-center items-center lg:items-start flex-col-reverse lg:flex-row">
+      <div className="hidden sm:flex lg:justify-between justify-center items-center lg:items-start flex-col-reverse lg:flex-row">
         <div className="flex flex-col basis-[50%] mx-10">
           <Content title="About Me">
             <p className="content-text">
