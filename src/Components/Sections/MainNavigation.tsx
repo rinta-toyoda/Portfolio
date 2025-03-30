@@ -5,7 +5,7 @@ export default function MainNavigation() {
   return (
     <motion.header
       whileHover={{ backgroundColor: "rgba(255,248,219,1)" }}
-      className="group flex justify-between w-full h-20 top-[-10px] bg-opacity-30 bg-[#FFF8DB] text-[#FFF8DB] hover:text-[#7D8ABC] z-20 fixed"
+      className="group flex justify-between fixed left-0 right-0 h-20 top-[-10px] bg-opacity-30 bg-[#FFF8DB] text-[#FFF8DB] hover:text-[#7D8ABC] z-20"
     >
       <div className="flex-1 font-bold text-4xl ml-4 pt-6">
         Rinta's Portfolio
