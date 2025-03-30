@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Title from "./Components/Sections/Title.tsx";
 import AboutMe from "./Components/Sections/AboutMe.tsx";
-import MyExperience from "./Components/Sections/MyExperience.tsx";
+import WorkExperience from "./Components/Sections/WorkExperience.tsx";
 import MyEducation from "./Components/Sections/MyEducation.tsx";
 import MyProjects from "./Components/Sections/MyProjects.tsx";
 import Background from "./Components/Background.tsx";
@@ -21,7 +21,7 @@ export default function App() {
       <AboutMe />
       <MyProjects />
       <div className="flex flex-wrap justify-around items-start content-center">
-        <MyExperience />
+        <WorkExperience />
         <MyEducation />
       </div>
       <Links />
