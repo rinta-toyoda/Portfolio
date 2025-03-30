@@ -4,7 +4,7 @@
 
 @layer utilities {
     .container-width {
-        @apply lg:w-[70%] md:w-[80%] w-[90%];
+        @apply lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%];
     }
     .button-width {
         @apply lg:w-[43rem] md:w-[40rem] sm:w-[38rem] w-[28rem];
