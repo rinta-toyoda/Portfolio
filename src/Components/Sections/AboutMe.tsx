@@ -63,7 +63,7 @@ export default function AboutMe() {
         </div>
         <motion.img
           whileHover={{ scale: 1.1 }}
-          className="lg:w-[40%] w-[25rem] lg:mt-[15rem] lg:mr-[3%] lg:ml-10 mb-10 rounded-2xl"
+          className="lg:w-[40%] w-[22rem] lg:mt-[15rem] lg:mr-[3%] lg:ml-10 mb-10 rounded-2xl"
           src={MyPhoto}
         ></motion.img>
       </div>
