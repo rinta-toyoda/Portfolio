@@ -16,7 +16,7 @@ export default function SubSectionWrapper({
   }
 
   return (
-    <div className="flex-1 basis-[45%]">
+    <div className="flex-1 sm:basis-[45%] width-[200rem]">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
