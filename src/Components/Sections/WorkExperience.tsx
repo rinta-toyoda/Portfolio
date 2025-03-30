@@ -1,11 +1,11 @@
 import SubSectionWrapper from "../SectionsWrappers/SubSectionWrapper.tsx";
 import SectionTimeline from "../Utils/SectionTimeline.tsx";
-import { ExperienceDatas } from "../Datas/ExperienceDatas.tsx";
+import { WorkDatas } from "../Datas/WorkDatas.tsx";
 
 export default function WorkExperience() {
   return (
     <SubSectionWrapper title="Work">
-      <SectionTimeline items={ExperienceDatas} />
+      <SectionTimeline items={WorkDatas} />
     </SubSectionWrapper>
   );
 }
