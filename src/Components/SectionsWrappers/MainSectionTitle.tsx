@@ -10,7 +10,7 @@ export default function MainSectionTitle({
   isShowing: boolean;
 }) {
   return (
-    <div className="w-full text-center mb-10">
+    <div className="sm:w-full w-[380px] text-center mb-10">
       <motion.button
         whileHover={{
           scale: 1.1,
@@ -23,12 +23,12 @@ export default function MainSectionTitle({
         }}
         onClick={onClickHandler}
         className={`
-           font-bold text-[6rem] ${isShowing ? "text-[#26A69A]" : "text-[#FF6F61] button-width rounded-2xl"}
+           font-bold sm:text-[6rem] text-[3rem] ${isShowing ? "text-[#26A69A]" : "text-[#FF6F61] button-width rounded-2xl"}
         `}
       >
         {title}
       </motion.button>
-      {isShowing && <hr className="bg-white w-[80%] mx-auto" />}
+      {isShowing && <hr className="bg-white sm:w-[80%] w-[350px] mx-auto" />}
     </div>
   );
 }

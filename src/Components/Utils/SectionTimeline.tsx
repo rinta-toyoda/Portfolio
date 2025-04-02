@@ -13,6 +13,7 @@ import { ReactNode } from "react";
 export default function SectionTimeline({
   items,
   skills_title,
+  isMobile,
 }: {
   items: {
     date: string;
@@ -22,6 +23,7 @@ export default function SectionTimeline({
     skills: string[];
   }[];
   skills_title: string;
+  isMobile: boolean;
 }) {
   return (
     <Timeline
@@ -40,15 +42,22 @@ export default function SectionTimeline({
           skills: string[];
         }) => (
           <TimelineItem>
-            <TimelineOppositeContent color="#FFFFFF">
-              {item.date}
-            </TimelineOppositeContent>
+            {!isMobile && (
+              <TimelineOppositeContent color="#FFFFFF">
+                <p className="sm:text-[15px] text-[13px]">{item.date}</p>
+              </TimelineOppositeContent>
+            )}
             <TimelineSeparator>
               <TimelineDot color="grey" />
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <div className="mb-[3.5rem] ml-[2rem]">
+              <div className="mb-[3.5rem] sm:ml-[2rem] ml-[0rem]">
+                {isMobile && (
+                  <p className="text-lg text-white font-semibold mb-2">
+                    {item.date}
+                  </p>
+                )}
                 <Card
                   name={item.name}
                   description={item.description}

@@ -3,7 +3,7 @@ import { CgWebsite } from "react-icons/cg";
 import { LuShip } from "react-icons/lu";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 
-const ICON_SIZE = 90;
+const ICON_SIZE = 80;
 
 export const ProjectDatas = [
   {

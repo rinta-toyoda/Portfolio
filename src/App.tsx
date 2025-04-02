@@ -7,24 +7,42 @@ import MyProjects from "./Components/Sections/MyProjects.tsx";
 import Background from "./Components/Background.tsx";
 import MainNavigation from "./Components/Sections/MainNavigation.tsx";
 import Links from "./Components/Sections/Links.tsx";
+import { useMediaQuery } from "@mui/material";
 
 export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const isMobile = useMediaQuery("(max-width:767px)");
+
+  let SubContents = (
+    <div className="sm:flex sm:flex-wrap sm:justify-around sm:items-start sm:content-center">
+      <WorkExperience isMobile={isMobile} />
+      <MyEducation isMobile={isMobile} />
+    </div>
+  );
+
+  if (isMobile) {
+    SubContents = (
+      <>
+        <WorkExperience isMobile={isMobile} />
+        <MyEducation isMobile={isMobile} />
+      </>
+    );
+  }
+
   return (
-    <div className="z-10 relative">
+    <div className="z-10 relative w-full">
       <Background />
       <MainNavigation />
       <Title />
-      <AboutMe />
-      <MyProjects />
-      <div className="flex flex-wrap justify-around items-start content-center">
-        <WorkExperience />
-        <MyEducation />
+      <div className="flex flex-col items-center">
+        <AboutMe />
+        <MyProjects />
+        {SubContents}
+        <Links />
       </div>
-      <Links />
       <div className="mb-[40rem]"></div>
     </div>
   );

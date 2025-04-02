@@ -11,7 +11,7 @@ export default function SubSectionTitle({
 }) {
   return (
     <motion.div
-      className="w-full text-center mb-10"
+      className="sm:w-full w-[380px] text-center mb-10"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.8 }}
@@ -29,12 +29,12 @@ export default function SubSectionTitle({
         }}
         onClick={onClickHandler}
         className={`
-           font-bold text-[6rem] ${isShowing ? "text-[#A6CDC6]" : "text-[#7D8ABC] button-width rounded-2xl"}
+           font-bold sm:text-[6rem] text-[3rem] ${isShowing ? "text-[#A6CDC6]" : "text-[#7D8ABC] button-width rounded-2xl"}
         `}
       >
         {title}
       </motion.button>
-      {isShowing && <hr className="bg-white w-[80%] mx-auto" />}
+      {isShowing && <hr className="bg-white sm:w-[80%] w-[350px] mx-auto" />}
     </motion.div>
   );
 }

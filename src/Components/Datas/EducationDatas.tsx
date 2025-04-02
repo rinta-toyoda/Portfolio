@@ -2,7 +2,7 @@ import { LuBrain } from "react-icons/lu";
 import { RiRobot2Line } from "react-icons/ri";
 import { FcEngineering } from "react-icons/fc";
 
-const ICON_SIZE = 90;
+const ICON_SIZE = 80;
 
 export const EducationDatas = [
   {

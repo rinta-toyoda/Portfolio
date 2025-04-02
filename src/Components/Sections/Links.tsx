@@ -14,7 +14,7 @@ export default function Links() {
         axis="y"
         onReorder={setItems}
         values={items}
-        className="text-3xl mx-10"
+        className="text-3xl sm:mx-10 mx-0 flex flex-col items-center"
       >
         {items.map((item) => (
           <LinkItem key={item} index={item} datas={LinkDatas} />

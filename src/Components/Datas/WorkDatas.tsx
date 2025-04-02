@@ -2,7 +2,7 @@ import { PiChalkboardTeacher } from "react-icons/pi";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 import { FaLaptopCode } from "react-icons/fa";
 
-const ICON_SIZE = 90;
+const ICON_SIZE = 80;
 
 export const WorkDatas = [
   {

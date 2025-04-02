@@ -22,10 +22,10 @@ export const LinkItem = ({ index, datas }: Props) => {
       value={index}
       id={index}
       style={{ boxShadow, y }}
-      className="xl:h-[4rem] xl:w-[50rem] lg:h-[5rem] lg:w-[40rem] md:h-[6rem] md:w-[35rem] sm:h-[7rem] sm:w-[30rem] h-[8rem] w-[23rem] bg-[#FFF8DB] rounded-xl flex items-center font-bold text-[#304463] mb-5"
+      className="xl:h-[4rem] xl:w-[50rem] lg:h-[5rem] lg:w-[40rem] md:h-[6rem] md:w-[35rem] sm:h-[7rem] sm:w-[30rem] h-[6rem] w-[20rem] bg-[#FFF8DB] rounded-xl flex items-center font-bold text-[#304463] mb-5"
     >
-      <a href={data.url} target="_blank" className="ml-3 text-[1.1rem]">
-        <span className="text-[#FFB74D] text-[1.25rem]">{`${data.name}:`}</span>{" "}
+      <a href={data.url} target="_blank" className="ml-3 text-[1rem]">
+        <span className="text-[#FFB74D] text-[1.1rem]">{`${data.name}:`}</span>{" "}
         {` ${data.description}`}
       </a>
     </Reorder.Item>

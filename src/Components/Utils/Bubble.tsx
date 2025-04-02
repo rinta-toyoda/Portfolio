@@ -5,7 +5,7 @@ export default function Bubble({ item }: { item: string }) {
     <motion.div
       whileHover={{ scale: 1.2, backgroundColor: "#304463" }}
       className={`
-        p-2 bg-[#7D8ABC] rounded-xl text-center font-bold text-[1.25rem] text-[#FFF8DB]
+        p-2 bg-[#7D8ABC] rounded-xl text-center font-bold sm:text-[1.25rem] text-[0.9rem] text-[#FFF8DB]
       `}
     >
       {item}

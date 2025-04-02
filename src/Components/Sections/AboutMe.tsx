@@ -8,7 +8,7 @@ export default function AboutMe() {
   return (
     <MainSectionWrapper title="About Me">
       <div className="flex lg:justify-between justify-center items-center lg:items-start flex-col-reverse lg:flex-row">
-        <div className="flex flex-col basis-[50%] mx-10">
+        <div className="flex flex-col basis-[50%] sm:mx-10 mx-2">
           <Content title="About Me">
             <p className="content-text">
               Full-stack Engineer from Japan with around 2 years of experience.
@@ -63,7 +63,7 @@ export default function AboutMe() {
         </div>
         <motion.img
           whileHover={{ scale: 1.1 }}
-          className="lg:w-[40%] w-[22rem] lg:mt-[15rem] lg:mr-[3%] lg:ml-10 mb-10 rounded-2xl"
+          className="lg:w-[40%] sm:w-[22rem] w-[15rem] lg:mt-[15rem] lg:mr-[3%] lg:ml-10 mb-10 rounded-2xl"
           src={MyPhoto}
         ></motion.img>
       </div>

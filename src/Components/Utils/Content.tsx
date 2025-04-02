@@ -17,7 +17,7 @@ export default function ({
           display: "inline-block",
           transformOrigin: "50% 50%",
         }}
-        className="mb-5 font-bold text-4xl text-[#FFB74D] w-max mx-auto"
+        className="mb-5 font-bold sm:text-4xl text-3xl text-[#FFB74D] w-max mx-auto"
       >
         <u>{title}</u>
       </motion.p>

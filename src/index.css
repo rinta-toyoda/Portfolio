@@ -4,12 +4,12 @@
 
 @layer utilities {
     .container-width {
-        @apply lg:w-[70%] md:w-[80%] sm:w-[90%] w-[100%];
+        @apply lg:w-[70%] md:w-[80%] sm:w-[90%] w-[80%];
     }
     .button-width {
-        @apply lg:w-[43rem] md:w-[40rem] sm:w-[38rem] w-[28rem];
+        @apply lg:w-[40rem] md:w-[38rem] sm:w-[36rem] w-[20rem];
     }
     .content-text {
-        @apply text-3xl text-[#FFF8DB];
+        @apply sm:text-3xl text-xl text-[#FFF8DB];
     }
 }

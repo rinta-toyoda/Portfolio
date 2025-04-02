@@ -25,14 +25,14 @@ export default function Card({
         display: "inline-block",
         transformOrigin: "50% 50%",
       }}
-      className="text-2xl text-[#7D8ABC] font-bold"
+      className="sm:text-2xl text-[20px] text-[#7D8ABC] font-bold"
     >
       {name}
     </motion.h1>
   );
 
   let iconElement = (
-    <motion.div whileHover={{ scale: 1.1 }} className="mr-3 mt-3">
+    <motion.div whileHover={{ scale: 1.1 }} className="sm:mr-3 mr-1 mt-3">
       {icon}
     </motion.div>
   );
@@ -54,15 +54,17 @@ export default function Card({
   return (
     <motion.div
       whileHover={{ scale: 1.2, backgroundColor: "#FFF8DB" }}
-      className="bg-[#FFF8DB] rounded-2xl bg-opacity-85 p-4 sm:basis-[45%] basis-[90%] xl:w-[100%] sm:w-[70%] w-[80%] mx-auto"
+      className="bg-[#FFF8DB] rounded-2xl bg-opacity-85 p-4 sm:basis-[45%] basis-[90%] xl:w-[100%] sm:w-[70%] w-[15rem] mx-auto"
       key={name}
     >
       {nameElement}
-      <div className="flex flex-row gap-2 justify-between">
-        <p className="text-lg text-[#304463]">{description}</p>
+      <div className="sm:flex sm:flex-row sm:gap-2 sm:justify-between">
+        <p className="sm:text-lg text-[18px] text-[#304463]">{description}</p>
         {iconElement}
       </div>
-      <p className="text-xl font-bold text-[#7D8ABC] mt-2">{skills_title}</p>
+      <p className="sm:text-xl text-[20px] font-bold text-[#7D8ABC] mt-2">
+        {skills_title}
+      </p>
       <Bubbles items={skills} />
     </motion.div>
   );
