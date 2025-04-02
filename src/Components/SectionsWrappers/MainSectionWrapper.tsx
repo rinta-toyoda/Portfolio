@@ -17,7 +17,7 @@ export default function MainSectionWrapper({
 
   return (
     <motion.div
-      className="flex container-width sm:mx-auto -ml-[3.5rem]"
+      className="flex container-width sm:mx-auto -ml-[4rem]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.1 }}
