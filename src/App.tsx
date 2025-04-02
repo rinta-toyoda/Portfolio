@@ -34,7 +34,7 @@ export default function App() {
 
   return (
     <div className="z-10 relative w-full">
-      <Background />
+      <Background isMobile={isMobile} />
       <MainNavigation />
       <Title />
       <div className="flex flex-col items-center">

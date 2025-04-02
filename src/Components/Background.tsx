@@ -8,7 +8,7 @@ import {
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
-export default function Background() {
+export default function Background({ isMobile }: { isMobile: boolean }) {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function Background() {
     }).then(() => {
       setInit(true);
     });
-  }, []);
+  }, [isMobile]);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
@@ -58,7 +58,7 @@ export default function Background() {
         },
         links: {
           color: "#ffffff",
-          distance: 200,
+          distance: isMobile ? 150 : 200,
           enable: true,
           opacity: 0.3,
           width: 3,
@@ -77,7 +77,7 @@ export default function Background() {
           density: {
             enable: false,
           },
-          value: 70,
+          value: isMobile ? 15 : 70,
         },
         opacity: {
           value: 0.2,
@@ -91,7 +91,7 @@ export default function Background() {
       },
       detectRetina: true,
     }),
-    [],
+    [isMobile],
   );
 
   if (init) {
