@@ -8,6 +8,7 @@ import Background from "./Components/Background.tsx";
 import MainNavigation from "./Components/Sections/MainNavigation.tsx";
 import Links from "./Components/Sections/Links.tsx";
 import { useMediaQuery } from "@mui/material";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   useEffect(() => {
@@ -44,6 +45,7 @@ export default function App() {
         <Links />
       </div>
       <div className="mb-[40rem]"></div>
+      <Analytics />
     </div>
   );
 }
