@@ -17,17 +17,17 @@ export default function AboutMe() {
           </Content>
 
           <Content title="My work experience">
-            <p className="sm:text-3xl text-xl mb-2 text-[#FF6F61] font-bold">
+            <p className="sm:text-3xl text-[#FFB74D] text-xl mb-2 font-bold">
               1. Full-stack Engineer
             </p>
             <p className="content-text">
-              <span className="font-semibold text-[#FFB74D]">
+              <span className="font-semibold text-[#A6CDC6]">
                 Company Project:{" "}
               </span>
               Fast growing AI SaaS platform Taskhub (https://taskhub.jp/).
             </p>
             <p className="content-text">
-              <span className="font-semibold text-[#FFB74D]">Role: </span>{" "}
+              <span className="font-semibold text-[#A6CDC6]">Role: </span>{" "}
               Defining software requirements, APIs, tests implementations and
               debugging.
             </p>
@@ -51,7 +51,7 @@ export default function AboutMe() {
               />
             </p>
 
-            <p className="sm:text-3xl text-xl mb-2 text-[#FF6F61] font-bold">
+            <p className="sm:text-3xl text-xl mb-2 text-[#FFB74D] font-bold">
               {/*I have worked as both a back-end and full-stack engineer. Jobs */}
               {/*  Through*/}
               {/*the experience, I acquired the web application*/}
@@ -61,14 +61,14 @@ export default function AboutMe() {
               2. Backend Engineer
             </p>
             <p className="content-text">
-              <span className="font-semibold text-[#FFB74D]">
+              <span className="font-semibold text-[#A6CDC6]">
                 Company Project:{" "}
               </span>
-              : TV program management software.
+              TV program management software.
             </p>
             <p className="content-text">
-              <span className="font-semibold text-[#FFB74D]">Role: </span> APIs,
-              tests implementations and debugging.
+              <span className="font-semibold text-[#A6CDC6] ">Role: </span>{" "}
+              APIs, tests implementations and debugging.
             </p>
             <p>
               {" "}
@@ -77,12 +77,26 @@ export default function AboutMe() {
           </Content>
 
           <Content title="My education">
+            {/*<p className="content-text">*/}
+            {/*  In my undergraduate course, I mainly studied and researched about*/}
+            {/*  machine learning and neuroscience. Through the research, my*/}
+            {/*  interest tilted towards artificial intelligence and IT, and*/}
+            {/*  enrolled in Master of Computer Science at University of Sydney to*/}
+            {/*  further deepen my knowledge.*/}
+            {/*</p>*/}
+
             <p className="content-text">
-              In my undergraduate course, I mainly studied and researched about
-              machine learning and neuroscience. Through the research, my
-              interest tilted towards artificial intelligence and IT, and
-              enrolled in Master of Computer Science at University of Sydney to
-              further deepen my knowledge.
+              <span className="font-semibold text-[#A6CDC6]">
+                Undergraduate:{" "}
+              </span>
+              Studied and researched about machine learning and neuroscience at
+              Waseda University bachelor's of Engineering.
+            </p>
+            <p className="content-text">
+              <span className="font-semibold text-[#A6CDC6] ">
+                Postgraduate:{" "}
+              </span>{" "}
+              Studying about artificial intelligence and IT.
             </p>
           </Content>
 

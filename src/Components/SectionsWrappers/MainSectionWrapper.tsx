@@ -28,7 +28,7 @@ export default function MainSectionWrapper({
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.3 }}
-        className={`mt-[10rem] px-[0rem] ${isShowing && "bg-gray-300 rounded-2xl bg-opacity-20"} pt-2 pb-10 mx-auto`}
+        className={`mt-[10rem] px-[0rem] ${isShowing && "bg-gray-300 rounded-2xl bg-opacity-30"} pt-2 pb-10 mx-auto`}
       >
         <MainSectionTitle
           onClickHandler={onClickTitle}
