@@ -11,8 +11,7 @@ export const ProjectDatas = [
     name: "Portfolio Website",
     date: "",
     icon: <CgWebsite size={ICON_SIZE} color="#FF6F61" />,
-    description:
-      "This Website. A very nicely animated front-end website. Implemented using HTML, TypeScript, React, Tailwind and Vite.",
+    description: "This Website. A very nicely animated front-end website.",
     skills: ["HTML", "TypeScript", "React", "Vite"],
     link: "https://github.com/rinta-toyoda/Portfolio",
   },
@@ -30,16 +29,8 @@ export const ProjectDatas = [
     name: "Todo App",
     date: "",
     icon: <LuNotebookPen size={ICON_SIZE} color="#7D8ABC" />,
-    description: "Full-stack app that records todos.",
-    skills: [
-      "HTML",
-      "TypeScript",
-      "React",
-      "Vite",
-      "Python",
-      "FastAPI",
-      "Docker",
-    ],
+    description: "Backend app that records todos.",
+    skills: ["Python", "FastAPI", "Docker"],
     link: "https://github.com/rinta-toyoda/todo_app",
   },
   {
