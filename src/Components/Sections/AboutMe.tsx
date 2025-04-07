@@ -11,16 +11,16 @@ export default function AboutMe() {
         <div className="flex flex-col basis-[50%] sm:mx-10 mx-2">
           <Content title="About Me">
             <p className="content-text">
-              Full-stack Engineer from Japan with around 2 years of experience.
-              Able to speak Japanese, English and a little Chinese.
+              Full-stack Engineer from Japan with 2 years of experience.
+              Able to speak Japanese, English and Chinese.
             </p>
           </Content>
 
           <Content title="My work experience">
             <p className="content-text">
               I have worked as both a back-end and full-stack engineer. Through
-              the experience, I have acquired not only the web application
-              development skills but also the skills to work as a team and
+              the experience, I acquired the web application
+              development skills, experience to work as a team and
               defining software requirements by discussing with tech-leads,
               managers and CEOs.
             </p>
@@ -28,7 +28,7 @@ export default function AboutMe() {
 
           <Content title="My education">
             <p className="content-text">
-              In my undergraduate course, I have mainly studied and researched
+              In my undergraduate course, I mainly studied and researched
               about machine learning and neuroscience. Through the research, my
               interest tilted towards artificial intelligence and IT, and
               enrolled in Master of Computer Science at University of Sydney to
@@ -39,6 +39,7 @@ export default function AboutMe() {
           <Content title="My IT skills">
             <Bubbles
               items={[
+                  "Go",
                 "PHP",
                 "Laravel",
                 "Python",
