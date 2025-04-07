@@ -10,6 +10,6 @@
         @apply lg:w-[40rem] md:w-[38rem] sm:w-[36rem] w-[20rem];
     }
     .content-text {
-        @apply sm:text-3xl text-xl text-[#FFF8DB];
+        @apply sm:text-3xl text-xl text-[#FFF8DB] mb-3;
     }
 }
