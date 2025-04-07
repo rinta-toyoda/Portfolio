@@ -8,3 +8,8 @@ Download required libraries with npm install
 ```
 npm install
 ```
+
+Run the development server
+```
+npm run dev
+```
