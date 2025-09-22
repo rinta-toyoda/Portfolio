@@ -1,7 +1,4 @@
-# Portfolio Website made with React, TypeScript, Tailwind and Vite
-
-## Public URL
-[https://www.rinta.au](https://www.rinta.au)
+# Portfolio Website made with React, TypeScript, Tailwind and Vite (Deprecated)
 
 ## How to get started
 Download required libraries with npm install
